@@ -7,6 +7,7 @@ import { HeroDetailComponent } from '../hero-detail/hero-detail.component';
 import { HeroService } from '../hero.service';
 import { MessageService } from '../message.service';
 import { RouterLink } from '@angular/router';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 @Component({
   selector: 'app-heroes',
@@ -20,12 +21,12 @@ import { RouterLink } from '@angular/router';
     NgIf,
     HeroDetailComponent,
     RouterLink,
+    HttpClientModule,
   ],
 })
 export class HeroesComponent {
   constructor(
-    private heroService: HeroService,
-    private messageService: MessageService
+    private heroService: HeroService //private messageService: MessageService
   ) {}
   // hero: Hero = {
   //   id: 1,

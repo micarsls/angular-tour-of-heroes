@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterLink, RouterOutlet } from '@angular/router';
 import { HeroesComponent } from './heroes/heroes.component';
 import { MessagesComponent } from './messages/messages.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @Component({
   selector: 'app-root',
@@ -15,6 +16,7 @@ import { MessagesComponent } from './messages/messages.component';
     HeroesComponent,
     MessagesComponent,
     RouterLink,
+    HttpClientModule,
   ],
 })
 export class AppComponent {
